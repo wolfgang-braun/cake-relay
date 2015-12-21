@@ -26,7 +26,13 @@ class ChannelsController extends AppController
 
     public function index()
     {
-        $states = $this->PiRelay->getState(PiRelay::CHANNEL_ALL);
+        $states = $this->PiRelay->getState();
         $this->set(compact('states'));
+    }
+
+    public function setState($channel, $state)
+    {
+        $this->PiRelay->setState($channel, $state);
+        $this->redirect(['action' => 'index']);
     }
 }
