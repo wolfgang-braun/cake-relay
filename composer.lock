@@ -184,16 +184,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "3.1.5",
+            "version": "3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "bfc9cfbb8508e1014e183f35aff082fd584c00d7"
+                "reference": "22e7a7bb345e38ad5ffe2bb9c64364da822713e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/bfc9cfbb8508e1014e183f35aff082fd584c00d7",
-                "reference": "bfc9cfbb8508e1014e183f35aff082fd584c00d7",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/22e7a7bb345e38ad5ffe2bb9c64364da822713e9",
+                "reference": "22e7a7bb345e38ad5ffe2bb9c64364da822713e9",
                 "shasum": ""
             },
             "require": {
@@ -250,7 +250,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-11-30 03:10:23"
+            "time": "2015-12-23 16:07:38"
         },
         {
             "name": "cakephp/cakephp-codesniffer",
@@ -1137,12 +1137,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/glide.git",
-                "reference": "bd4827dc05f5164fddb9e1a7152b954afd1d2ec7"
+                "reference": "4f4fb11ff08587e2808df664850625122a613dc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/glide/zipball/bd4827dc05f5164fddb9e1a7152b954afd1d2ec7",
-                "reference": "bd4827dc05f5164fddb9e1a7152b954afd1d2ec7",
+                "url": "https://api.github.com/repos/thephpleague/glide/zipball/4f4fb11ff08587e2808df664850625122a613dc9",
+                "reference": "4f4fb11ff08587e2808df664850625122a613dc9",
                 "shasum": ""
             },
             "require": {
@@ -1190,7 +1190,7 @@
                 "manipulation",
                 "processing"
             ],
-            "time": "2015-12-21 14:59:05"
+            "time": "2015-12-23 17:11:09"
         },
         {
             "name": "markstory/asset_compress",
@@ -2280,12 +2280,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wolfgang-braun/pirelay.git",
-                "reference": "44722712cdc09f33b2e53fe9206526d3bba1a9df"
+                "reference": "d25fac296987c7b786b9e5f04a0134fe912bcaa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wolfgang-braun/pirelay/zipball/44722712cdc09f33b2e53fe9206526d3bba1a9df",
-                "reference": "44722712cdc09f33b2e53fe9206526d3bba1a9df",
+                "url": "https://api.github.com/repos/wolfgang-braun/pirelay/zipball/d25fac296987c7b786b9e5f04a0134fe912bcaa2",
+                "reference": "d25fac296987c7b786b9e5f04a0134fe912bcaa2",
                 "shasum": ""
             },
             "require": {
@@ -2318,7 +2318,7 @@
                 "raspberry",
                 "seedstudio"
             ],
-            "time": "2015-12-20 18:45:14"
+            "time": "2015-12-23 17:20:05"
         }
     ],
     "packages-dev": [
