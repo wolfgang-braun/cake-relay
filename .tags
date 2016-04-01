@@ -1,0 +1,397 @@
+can	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^ * this table has to other tables. Multiple instances of this class can be created$/;"	class	line:46
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^ * $query = $users->findByUsername('mark');$/;"	variable	line:62
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^ * $query = $users->findByUsernameOrEmail('mark', 'mark@example.org');$/;"	variable	line:68
+Table	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^class Table implements RepositoryInterface, EventListenerInterface, EventDispatcherInterface$/;"	class	line:124
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * The rules class name that is used.$/;"	class	line:146
+_table	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected $_table;$/;"	variable	line:157
+_alias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected $_alias;$/;"	variable	line:165
+_connection	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected $_connection;$/;"	variable	line:172
+_schema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected $_schema;$/;"	variable	line:179
+_primaryKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected $_primaryKey;$/;"	variable	line:186
+_displayField	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected $_displayField;$/;"	variable	line:193
+_associations	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected $_associations;$/;"	variable	line:200
+_behaviors	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected $_behaviors;$/;"	variable	line:207
+that	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * The name of the class that represent a single row for this table$/;"	class	line:210
+_entityClass	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected $_entityClass;$/;"	variable	line:214
+_registryAlias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected $_registryAlias;$/;"	variable	line:221
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * - entityClass: The fully namespaced class name of the entity class that will$/;"	class	line:231
+__construct	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function __construct(array $config = [])$/;"	function	line:244
+config	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function __construct(array $config = [])$/;"	variable	line:244
+eventManager	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $eventManager = $behaviors = $associations = null;$/;"	variable	line:264
+eventManager	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $eventManager = $config['eventManager'];$/;"	variable	line:266
+behaviors	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $behaviors = $config['behaviors'];$/;"	variable	line:269
+associations	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $associations = $config['associations'];$/;"	variable	line:272
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                foreach ($config['validator'] as $name => $validator) {$/;"	variable	line:278
+_eventManager	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $this->_eventManager = $eventManager ?: new EventManager();$/;"	variable	line:283
+_behaviors	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $this->_behaviors = $behaviors ?: new BehaviorRegistry();$/;"	variable	line:284
+_associations	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $this->_associations = $associations ?: new AssociationCollection();$/;"	variable	line:286
+defaultConnectionName	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public static function defaultConnectionName()$/;"	function	line:302
+initialize	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     *  public function initialize(array $config)$/;"	function	line:314
+initialize	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function initialize(array $config)$/;"	function	line:325
+table	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function table($table = null)$/;"	function	line:335
+_table	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_table = $table;$/;"	variable	line:338
+table	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $table = namespaceSplit(get_class($this));$/;"	variable	line:341
+table	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $table = substr(end($table), 0, -5);$/;"	variable	line:342
+table	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                $table = $this->alias();$/;"	variable	line:344
+_table	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_table = Inflector::underscore($table);$/;"	variable	line:346
+alias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function alias($alias = null)$/;"	function	line:354
+_alias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_alias = $alias;$/;"	variable	line:357
+alias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $alias = namespaceSplit(get_class($this));$/;"	variable	line:360
+alias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $alias = substr(end($alias), 0, -5) ?: $this->_table;$/;"	variable	line:361
+_alias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_alias = $alias;$/;"	variable	line:362
+aliasField	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function aliasField($field)$/;"	function	line:373
+registryAlias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function registryAlias($registryAlias = null)$/;"	function	line:384
+_registryAlias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_registryAlias = $registryAlias;$/;"	variable	line:387
+_registryAlias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_registryAlias = $this->alias();$/;"	variable	line:390
+connection	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function connection(ConnectionInterface $conn = null)$/;"	function	line:401
+conn	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function connection(ConnectionInterface $conn = null)$/;"	variable	line:401
+_connection	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        return $this->_connection = $conn;$/;"	variable	line:407
+schema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function schema($schema = null)$/;"	function	line:422
+_schema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                $this->_schema = $this->_initializeSchema($/;"	variable	line:426
+constraints	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $constraints = [];$/;"	variable	line:436
+constraints	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                $constraints = $schema['_constraints'];$/;"	variable	line:439
+schema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $schema = new Schema($this->table(), $schema);$/;"	variable	line:443
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            foreach ($constraints as $name => $value) {$/;"	variable	line:445
+_schema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        return $this->_schema = $schema;$/;"	variable	line:450
+in	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * Override this function in order to alter the schema used by this table.$/;"	function	line:454
+is	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * This function is only called after fetching the schema out of the database.$/;"	function	line:455
+_initializeSchema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * protected function _initializeSchema(\\Cake\\Database\\Schema\\Table $table) {$/;"	function	line:463
+_initializeSchema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected function _initializeSchema(Schema $table)$/;"	function	line:473
+hasField	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function hasField($field)$/;"	function	line:487
+schema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $schema = $this->schema();$/;"	variable	line:489
+primaryKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function primaryKey($key = null)$/;"	function	line:499
+_primaryKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_primaryKey = $key;$/;"	variable	line:502
+key	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $key = (array)$this->schema()->primaryKey();$/;"	variable	line:505
+key	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                $key = $key[0];$/;"	variable	line:507
+_primaryKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_primaryKey = $key;$/;"	variable	line:509
+displayField	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function displayField($key = null)$/;"	function	line:520
+_displayField	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_displayField = $key;$/;"	variable	line:523
+schema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $schema = $this->schema();$/;"	variable	line:526
+primary	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $primary = (array)$this->primaryKey();$/;"	variable	line:527
+_displayField	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_displayField = array_shift($primary);$/;"	variable	line:528
+_displayField	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                $this->_displayField = 'title';$/;"	variable	line:530
+_displayField	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                $this->_displayField = 'name';$/;"	variable	line:533
+used	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * Returns the class used to hydrate rows for this table or sets$/;"	class	line:540
+to	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * @param string|null $name the name of the class to use$/;"	class	line:543
+cannot	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * @throws \\Cake\\ORM\\Exception\\MissingEntityException when the entity class cannot be found$/;"	class	line:544
+entityClass	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function entityClass($name = null)$/;"	function	line:547
+default	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $default = '\\Cake\\ORM\\Entity';$/;"	variable	line:550
+self	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $self = get_called_class();$/;"	variable	line:551
+parts	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $parts = explode('\\\\', $self);$/;"	variable	line:552
+_entityClass	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                return $this->_entityClass = $default;$/;"	variable	line:555
+alias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $alias = Inflector::singularize(substr(array_pop($parts), 0, -5));$/;"	variable	line:558
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $name = implode('\\\\', array_slice($parts, 0, -1)) . '\\Entity\\\\' . $alias;$/;"	variable	line:559
+_entityClass	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                return $this->_entityClass = $default;$/;"	variable	line:561
+class	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $class = App::className($name, 'Model\/Entity');$/;"	variable	line:566
+_entityClass	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $this->_entityClass = $class;$/;"	variable	line:567
+reference	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * @param string $name The name of the behavior. Can be a short class reference.$/;"	class	line:595
+addBehavior	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function addBehavior($name, array $options = [])$/;"	function	line:601
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function addBehavior($name, array $options = [])$/;"	variable	line:601
+removeBehavior	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function removeBehavior($name)$/;"	function	line:621
+behaviors	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function behaviors()$/;"	function	line:631
+hasBehavior	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function hasBehavior($name)$/;"	function	line:642
+association	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function association($name)$/;"	function	line:653
+associations	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function associations()$/;"	function	line:663
+addAssociations	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function addAssociations(array $params)$/;"	function	line:695
+assocType	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        foreach ($params as $assocType => $tables) {$/;"	variable	line:697
+associated	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            foreach ($tables as $associated => $options) {$/;"	variable	line:698
+associated	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                    $associated = $options;$/;"	variable	line:700
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                    $options = [];$/;"	variable	line:701
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * - className: The class name of the target table object$/;"	class	line:720
+belongsTo	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function belongsTo($associated, array $options = [])$/;"	function	line:738
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function belongsTo($associated, array $options = [])$/;"	variable	line:738
+association	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $association = new BelongsTo($associated, $options);$/;"	variable	line:741
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * first argument, or you can either pass the class name to be instantiated or$/;"	class	line:750
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * - className: The class name of the target table object$/;"	class	line:755
+hasOne	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function hasOne($associated, array $options = [])$/;"	function	line:781
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function hasOne($associated, array $options = [])$/;"	variable	line:781
+association	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $association = new HasOne($associated, $options);$/;"	variable	line:784
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * first argument, or you can either pass the class name to be instantiated or$/;"	class	line:793
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * - className: The class name of the target table object$/;"	class	line:798
+hasMany	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function hasMany($associated, array $options = [])$/;"	function	line:830
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function hasMany($associated, array $options = [])$/;"	variable	line:830
+association	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $association = new HasMany($associated, $options);$/;"	variable	line:833
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * first argument, or you can either pass the class name to be instantiated or$/;"	class	line:842
+name	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * - className: The class name of the target table object.$/;"	class	line:847
+belongsToMany	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function belongsToMany($associated, array $options = [])$/;"	function	line:881
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function belongsToMany($associated, array $options = [])$/;"	variable	line:881
+association	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $association = new BelongsToMany($associated, $options);$/;"	variable	line:884
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $query = $articles->find('all', [$/;"	variable	line:914
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $query = $articles->find()$/;"	variable	line:924
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $query = $articles->find('published');$/;"	variable	line:936
+find	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function find($type = 'all', $options = [])$/;"	function	line:943
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function find($type = 'all', $options = [])$/;"	variable	line:943
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $query = $this->query();$/;"	variable	line:945
+findAll	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function findAll(Query $query, array $options)$/;"	function	line:960
+findList	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function findList(Query $query, array $options)$/;"	function	line:1022
+fields	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $fields = array_merge($/;"	variable	line:1041
+columns	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $columns = $this->schema()->columns();$/;"	variable	line:1046
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $options = $this->_setFieldMatchers($/;"	variable	line:1052
+findThreaded	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function findThreaded(Query $query, array $options)$/;"	function	line:1089
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $options = $this->_setFieldMatchers($options, ['keyField', 'parentField']);$/;"	variable	line:1102
+used	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * This is an auxiliary function used for result formatters that can accept$/;"	function	line:1114
+_setFieldMatchers	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected function _setFieldMatchers($options, $keys)$/;"	function	line:1122
+fields	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $fields = $options[$field];$/;"	variable	line:1134
+matches	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                $matches = [];$/;"	variable	line:1136
+article	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $article = $articles->get(1, ['contain' => ['Users', 'Comments']]);$/;"	variable	line:1155
+get	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function get($primaryKey, $options = [])$/;"	function	line:1161
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function get($primaryKey, $options = [])$/;"	variable	line:1161
+key	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $key = (array)$this->primaryKey();$/;"	variable	line:1163
+alias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $alias = $this->alias();$/;"	variable	line:1164
+index	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        foreach ($key as $index => $keyname) {$/;"	variable	line:1165
+primaryKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $primaryKey = (array)$primaryKey;$/;"	variable	line:1168
+primaryKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $primaryKey = $primaryKey ?: [null];$/;"	variable	line:1170
+primaryKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $primaryKey = array_map(function ($key) {$/;"	variable	line:1171
+conditions	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $conditions = array_combine($key, $primaryKey);$/;"	variable	line:1181
+cacheConfig	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $cacheConfig = isset($options['cache']) ? $options['cache'] : false;$/;"	variable	line:1183
+cacheKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $cacheKey = isset($options['key']) ? $options['key'] : false;$/;"	variable	line:1184
+finder	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $finder = isset($options['finder']) ? $options['finder'] : 'all';$/;"	variable	line:1185
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $query = $this->find($finder, $options)->where($conditions);$/;"	variable	line:1188
+cacheKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                $cacheKey = sprintf($/;"	variable	line:1192
+findOrCreate	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function findOrCreate($search, callable $callback = null)$/;"	function	line:1222
+callback	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function findOrCreate($search, callable $callback = null)$/;"	variable	line:1222
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $query = $this->find()->where($search);$/;"	variable	line:1224
+row	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $row = $query->first();$/;"	variable	line:1225
+entity	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $entity = $this->newEntity();$/;"	variable	line:1229
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function query()$/;"	function	line:1240
+updateAll	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function updateAll($fields, $conditions)$/;"	function	line:1248
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $query = $this->query();$/;"	variable	line:1250
+statement	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $statement = $query->execute();$/;"	variable	line:1254
+deleteAll	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function deleteAll($conditions)$/;"	function	line:1262
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $query = $this->query()$/;"	variable	line:1264
+statement	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $statement = $query->execute();$/;"	variable	line:1267
+exists	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function exists($conditions)$/;"	function	line:1275
+save	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function save(EntityInterface $entity, $options = [])$/;"	function	line:1370
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function save(EntityInterface $entity, $options = [])$/;"	variable	line:1370
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $options = new ArrayObject($options + [$/;"	variable	line:1372
+connection	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $connection = $this->connection();$/;"	variable	line:1388
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $success = $connection->transactional(function () use ($entity, $options) {$/;"	variable	line:1390
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $success = $this->_processSave($entity, $options);$/;"	variable	line:1394
+_processSave	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected function _processSave($entity, $options)$/;"	function	line:1420
+primaryColumns	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $primaryColumns = (array)$this->primaryKey();$/;"	variable	line:1422
+alias	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $alias = $this->alias();$/;"	variable	line:1425
+conditions	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $conditions = [];$/;"	variable	line:1426
+k	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            foreach ($entity->extract($primaryColumns) as $k => $v) {$/;"	variable	line:1427
+mode	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $mode = $entity->isNew() ? RulesChecker::CREATE : RulesChecker::UPDATE;$/;"	variable	line:1433
+event	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $event = $this->dispatchEvent('Model.beforeSave', compact('entity', 'options'));$/;"	variable	line:1439
+saved	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $saved = $this->_associations->saveParents($/;"	variable	line:1445
+data	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $data = $entity->extract($this->schema()->columns(), true);$/;"	variable	line:1456
+isNew	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $isNew = $entity->isNew();$/;"	variable	line:1457
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $success = $this->_insert($entity, $data);$/;"	variable	line:1460
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $success = $this->_update($entity, $data);$/;"	variable	line:1462
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $success = $this->_associations->saveChildren($/;"	variable	line:1466
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                $success = true;$/;"	variable	line:1479
+to	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * Auxiliary function to handle the insert of an entity's data in the table$/;"	function	line:1494
+_insert	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected function _insert($entity, $data)$/;"	function	line:1502
+primary	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $primary = (array)$this->primaryKey();$/;"	variable	line:1504
+msg	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $msg = sprintf($/;"	variable	line:1506
+keys	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $keys = array_fill(0, count($primary), null);$/;"	variable	line:1512
+id	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $id = (array)$this->_newId($primary) + $keys;$/;"	variable	line:1513
+primary	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $primary = array_combine($primary, $id);$/;"	variable	line:1516
+primary	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $primary = array_intersect_key($data, $primary) + $primary;$/;"	variable	line:1517
+filteredKeys	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $filteredKeys = array_filter($primary, 'strlen');$/;"	variable	line:1519
+data	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $data = $data + $filteredKeys;$/;"	variable	line:1520
+schema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $schema = $this->schema();$/;"	variable	line:1523
+k	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            foreach ($primary as $k => $v) {$/;"	variable	line:1524
+msg	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                    $msg = 'Cannot insert row, some of the primary key values are missing. ';$/;"	variable	line:1526
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $success = false;$/;"	variable	line:1537
+statement	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $statement = $this->query()->insert(array_keys($data))$/;"	variable	line:1542
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $success = $entity;$/;"	variable	line:1547
+schema	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $schema = $this->schema();$/;"	variable	line:1549
+driver	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $driver = $this->connection()->driver();$/;"	variable	line:1550
+key	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            foreach ($primary as $key => $v) {$/;"	variable	line:1551
+id	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                    $id = $statement->lastInsertId($this->table(), $key);$/;"	variable	line:1553
+type	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^                    $type = $schema->columnType($key);$/;"	variable	line:1554
+_newId	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected function _newId($primary)$/;"	function	line:1574
+typeName	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $typeName = $this->schema()->columnType($primary[0]);$/;"	variable	line:1579
+type	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $type = Type::build($typeName);$/;"	variable	line:1580
+to	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * Auxiliary function to handle the update of an entity's data in the table$/;"	function	line:1585
+_update	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected function _update($entity, $data)$/;"	function	line:1592
+primaryColumns	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $primaryColumns = (array)$this->primaryKey();$/;"	variable	line:1594
+primaryKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $primaryKey = $entity->extract($primaryColumns);$/;"	variable	line:1595
+data	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $data = array_diff_key($data, $primaryKey);$/;"	variable	line:1597
+message	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $message = 'All primary key value(s) are needed for updating';$/;"	variable	line:1603
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $query = $this->query();$/;"	variable	line:1607
+statement	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $statement = $query->update()$/;"	variable	line:1608
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $success = false;$/;"	variable	line:1613
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $success = $entity;$/;"	variable	line:1615
+delete	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function delete(EntityInterface $entity, $options = [])$/;"	function	line:1648
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function delete(EntityInterface $entity, $options = [])$/;"	variable	line:1648
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $options = new ArrayObject($options + [$/;"	variable	line:1650
+process	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $process = function () use ($entity, $options) {$/;"	variable	line:1656
+connection	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $connection = $this->connection();$/;"	variable	line:1660
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $success = $connection->transactional($process);$/;"	variable	line:1662
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $success = $process();$/;"	variable	line:1664
+_processDelete	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected function _processDelete($entity, $options)$/;"	function	line:1691
+primaryKey	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $primaryKey = (array)$this->primaryKey();$/;"	variable	line:1697
+msg	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $msg = 'Deleting requires all primary key values.';$/;"	variable	line:1699
+event	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $event = $this->dispatchEvent('Model.beforeDelete', [$/;"	variable	line:1707
+query	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $query = $this->query();$/;"	variable	line:1721
+conditions	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $conditions = (array)$entity->extract($primaryKey);$/;"	variable	line:1722
+statement	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $statement = $query->delete()$/;"	variable	line:1723
+success	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $success = $statement->rowCount() > 0;$/;"	variable	line:1727
+hasFinder	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function hasFinder($type)$/;"	function	line:1747
+finder	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $finder = 'find' . $type;$/;"	variable	line:1749
+callFinder	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function callFinder($type, Query $query, array $options = [])$/;"	function	line:1764
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function callFinder($type, Query $query, array $options = [])$/;"	variable	line:1764
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $options = $query->getOptions();$/;"	variable	line:1767
+finder	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $finder = 'find' . $type;$/;"	variable	line:1768
+_dynamicFinder	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    protected function _dynamicFinder($method, $args)$/;"	function	line:1791
+method	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $method = Inflector::underscore($method);$/;"	variable	line:1793
+fields	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $fields = substr($method, 8);$/;"	variable	line:1797
+findType	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $findType = 'all';$/;"	variable	line:1798
+fields	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $fields = substr($method, strlen($matches[0]));$/;"	variable	line:1800
+findType	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $findType = Inflector::variable($matches[1]);$/;"	variable	line:1801
+hasOr	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $hasOr = strpos($fields, '_or_');$/;"	variable	line:1803
+hasAnd	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $hasAnd = strpos($fields, '_and_');$/;"	variable	line:1804
+makeConditions	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $makeConditions = function ($fields, $args) {$/;"	variable	line:1806
+conditions	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $conditions = [];$/;"	variable	line:1807
+conditions	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $conditions = [];$/;"	variable	line:1827
+hasAnd	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        if ($hasOr === false && $hasAnd === false) {$/;"	variable	line:1828
+conditions	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $conditions = $makeConditions([$fields], $args);$/;"	variable	line:1829
+fields	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $fields = explode('_or_', $fields);$/;"	variable	line:1831
+conditions	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $conditions = [$/;"	variable	line:1832
+fields	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $fields = explode('_and_', $fields);$/;"	variable	line:1836
+conditions	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $conditions = $makeConditions($fields, $args);$/;"	variable	line:1837
+__call	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function __call($method, $args)$/;"	function	line:1856
+__get	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function __get($property)$/;"	function	line:1878
+association	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $association = $this->_associations->get($property);$/;"	variable	line:1880
+__isset	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function __isset($property)$/;"	function	line:1898
+marshaller	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function marshaller()$/;"	function	line:1912
+article	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $article = $this->Articles->newEntity($/;"	variable	line:1925
+article	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $article = $this->Articles->newEntity($this->request->data(), [$/;"	variable	line:1935
+article	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $article = $this->Articles->newEntity($/;"	variable	line:1947
+article	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $article = $this->Articles->newEntity($/;"	variable	line:1958
+newEntity	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function newEntity($data = null, array $options = [])$/;"	function	line:1971
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function newEntity($data = null, array $options = [])$/;"	variable	line:1971
+class	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $class = $this->entityClass();$/;"	variable	line:1974
+entity	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $entity = new $class([], ['source' => $this->registryAlias()]);$/;"	variable	line:1975
+marshaller	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $marshaller = $this->marshaller();$/;"	variable	line:1981
+articles	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $articles = $this->Articles->newEntities($/;"	variable	line:1993
+articles	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $articles = $this->Articles->newEntities($this->request->data(), [$/;"	variable	line:2003
+newEntities	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function newEntities(array $data, array $options = [])$/;"	function	line:2013
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function newEntities(array $data, array $options = [])$/;"	variable	line:2013
+marshaller	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $marshaller = $this->marshaller();$/;"	variable	line:2018
+article	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $article = $this->Articles->patchEntity($article, $this->request->data(), [$/;"	variable	line:2033
+article	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $article = $this->patchEntity($article, $this->request->data(),[$/;"	variable	line:2045
+patchEntity	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function patchEntity(EntityInterface $entity, array $data, array $options = [])$/;"	function	line:2053
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function patchEntity(EntityInterface $entity, array $data, array $options = [])$/;"	variable	line:2053
+marshaller	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $marshaller = $this->marshaller();$/;"	variable	line:2058
+articles	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $articles = $this->Articles->patchEntities($articles, $this->request->data(), [$/;"	variable	line:2077
+patchEntities	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function patchEntities($entities, array $data, array $options = [])$/;"	function	line:2087
+options	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function patchEntities($entities, array $data, array $options = [])$/;"	variable	line:2087
+marshaller	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $marshaller = $this->marshaller();$/;"	variable	line:2092
+validateUnique	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function validateUnique($value, array $options, array $context = null)$/;"	function	line:2130
+context	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function validateUnique($value, array $options, array $context = null)$/;"	variable	line:2130
+context	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^            $context = $options;$/;"	variable	line:2133
+entity	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $entity = new Entity($/;"	variable	line:2135
+fields	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $fields = array_merge($/;"	variable	line:2143
+rule	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $rule = new IsUnique($fields);$/;"	variable	line:2147
+is	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * By implementing the conventional methods a table class is assumed$/;"	class	line:2154
+implementedEvents	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function implementedEvents()$/;"	function	line:2175
+eventMap	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $eventMap = [$/;"	variable	line:2177
+events	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $events = [];$/;"	variable	line:2189
+event	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        foreach ($eventMap as $event => $method) {$/;"	variable	line:2191
+buildRules	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function buildRules(RulesChecker $rules)$/;"	function	line:2206
+user	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $user = $usersTable->get(1);$/;"	variable	line:2219
+user	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $user = $usersTable->loadInto($user, ['Articles.Tags', 'Articles.Comments']);$/;"	variable	line:2220
+users	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $users = $usersTable->find()->where([...])->toList();$/;"	variable	line:2229
+users	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^     * $users = $usersTable->loadInto($users, ['Articles.Tags', 'Articles.Comments']);$/;"	variable	line:2230
+loadInto	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function loadInto($entities, array $contain)$/;"	function	line:2241
+__debugInfo	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^    public function __debugInfo()$/;"	function	line:2252
+conn	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $conn = $this->connection();$/;"	variable	line:2254
+associations	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $associations = $this->_associations ?: false;$/;"	variable	line:2255
+behaviors	/Users/fuco/Sites/cake-relay/vendor/cakephp/cakephp/src/ORM/Table.php	/^        $behaviors = $this->_behaviors ?: false;$/;"	variable	line:2256
+ENVIRONMENT	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^define('ENVIRONMENT', Environments::detect());$/;"	define	line:58
+isCli	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^$isCli = php_sapi_name() === 'cli';$/;"	variable	line:108
+s	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^    $s = null;$/;"	variable	line:139
+s	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^        $s = 's';$/;"	variable	line:141
+httpHost	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^    $httpHost = env('HTTP_HOST');$/;"	variable	line:144
+detector	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^    $detector = new \\Detection\\MobileDetect();$/;"	variable	line:162
+detector	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^    $detector = new \\Detection\\MobileDetect();$/;"	variable	line:166
+dlog	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^function dlog()$/;"	function	line:212
+args	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^    $args = func_get_args();$/;"	variable	line:214
+arg	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^            $arg = print_r($arg, true);$/;"	variable	line:217
+when	/Users/fuco/Sites/cake-relay/config/bootstrap.php	/^ * This is needed for matching the auto-localized string output of Time() class when parsing dates.$/;"	class	line:233
+WebsocketServerShell	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Shell/WebsocketServerShell.php	/^class WebsocketServerShell extends Shell$/;"	class	line:19
+main	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Shell/WebsocketServerShell.php	/^    public function main()$/;"	function	line:26
+loop	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Shell/WebsocketServerShell.php	/^        $loop   = Factory::create();$/;"	variable	line:28
+pusher	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Shell/WebsocketServerShell.php	/^        $pusher = new SocketPusher;$/;"	variable	line:29
+context	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Shell/WebsocketServerShell.php	/^        $context = new Context($loop);$/;"	variable	line:31
+pull	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Shell/WebsocketServerShell.php	/^        $pull = $context->getSocket(ZMQ::SOCKET_PULL);$/;"	variable	line:32
+webSock	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Shell/WebsocketServerShell.php	/^        $webSock = new Server($loop);$/;"	variable	line:36
+webServer	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Shell/WebsocketServerShell.php	/^        $webServer = new IoServer($/;"	variable	line:38
+ChannelsController	/Users/fuco/Sites/cake-relay/src/Controller/ChannelsController.php	/^class ChannelsController extends AppController$/;"	class	line:9
+PiRelay	/Users/fuco/Sites/cake-relay/src/Controller/ChannelsController.php	/^    public $PiRelay = null;$/;"	variable	line:16
+PiRelay	/Users/fuco/Sites/cake-relay/src/Controller/ChannelsController.php	/^    public $PiRelay = null;$/;"	variable	line:16
+beforeFilter	/Users/fuco/Sites/cake-relay/src/Controller/ChannelsController.php	/^    public function beforeFilter(\\Cake\\Event\\Event $event)$/;"	function	line:24
+PiRelay	/Users/fuco/Sites/cake-relay/src/Controller/ChannelsController.php	/^        $this->PiRelay = new PiRelay(null, null, 0);$/;"	variable	line:26
+index	/Users/fuco/Sites/cake-relay/src/Controller/ChannelsController.php	/^    public function index()$/;"	function	line:31
+actionOn	/Users/fuco/Sites/cake-relay/src/Controller/ChannelsController.php	/^        $actionOn = $this->ChannelActions->newEntity();$/;"	variable	line:34
+setState	/Users/fuco/Sites/cake-relay/src/Controller/ChannelsController.php	/^    public function setState($channel, $state)$/;"	function	line:39
+CwsConnectionsTable	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Table/CwsConnectionsTable.php	/^class CwsConnectionsTable extends Table$/;"	class	line:17
+initialize	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Table/CwsConnectionsTable.php	/^    public function initialize(array $config)$/;"	function	line:26
+validationDefault	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Table/CwsConnectionsTable.php	/^    public function validationDefault(Validator $validator)$/;"	function	line:46
+add	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Table/CwsConnectionsTable.php	/^    public function add($connection, $sessionId, $userId)$/;"	function	line:55
+connection	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Table/CwsConnectionsTable.php	/^        $connection = $this->newEntity([$/;"	variable	line:60
+return	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Table/CwsConnectionsTable.php	/^        $return = $this->save($connection);$/;"	variable	line:66
+remove	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Table/CwsConnectionsTable.php	/^    public function remove($connection)$/;"	function	line:70
+connection	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Table/CwsConnectionsTable.php	/^        $connection = $this->find()->where(['ressource_id' =>  $connection->wrappedConn->WAMP->sessionId])->first();$/;"	variable	line:72
+SocketPublisher	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^class SocketPublisher$/;"	class	line:8
+_class	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected $_class = null;$/;"	variable	line:11
+_class	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected $_class = null;$/;"	variable	line:11
+_payload	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected $_payload = [];$/;"	variable	line:12
+_payload	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected $_payload = [];$/;"	variable	line:12
+_clients	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected $_clients = [];$/;"	variable	line:13
+_clients	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected $_clients = [];$/;"	variable	line:13
+_action	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected $_action = '';$/;"	variable	line:14
+_action	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected $_action = '';$/;"	variable	line:14
+__construct	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    public function __construct($class, $action, $additionalPayload = [])$/;"	function	line:16
+additionalPayload	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    public function __construct($class, $action, $additionalPayload = [])$/;"	variable	line:16
+_setClass	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected function _setClass($class)$/;"	function	line:24
+_class	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^        $this->_class = $class;$/;"	variable	line:26
+_setPayload	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected function _setPayload($data)$/;"	function	line:29
+_setAction	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected function _setAction($action)$/;"	function	line:34
+_action	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^        $this->_action = $action;$/;"	variable	line:36
+_setClients	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    protected function _setClients()$/;"	function	line:39
+_clients	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^        $this->_clients = $this->_class->getPublisherClientIds($this->_action);$/;"	variable	line:44
+send	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^    public function send()$/;"	function	line:47
+context	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^        $context = new ZMQContext();$/;"	variable	line:60
+socket	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPublisher.php	/^        $socket = $context->getSocket(ZMQ::SOCKET_PUSH, $this->_class->source() . '.' . $this->_action);$/;"	variable	line:61
+SocketPusher	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^class SocketPusher implements WampServerInterface {$/;"	class	line:11
+_connections	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    protected $_connections = [];$/;"	variable	line:13
+_connections	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    protected $_connections = [];$/;"	variable	line:13
+__construct	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    public function __construct()$/;"	function	line:15
+CwsConnections	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^        $this->CwsConnections = TableRegistry::get('CakeWebsocket.CwsConnections');$/;"	variable	line:17
+onOpen	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    public function onOpen(ConnectionInterface $conn) {$/;"	function	line:20
+sessionId	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^        $sessionId = $this->__getSessionId($conn);$/;"	variable	line:22
+userId	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^        $userId = $this->__getUserIdFromSession($sessionId);$/;"	variable	line:23
+onClose	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    public function onClose(ConnectionInterface $conn) {$/;"	function	line:26
+onError	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    public function onError(ConnectionInterface $conn, \\Exception $e) {$/;"	function	line:30
+onMessage	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    public function onMessage($payload) {$/;"	function	line:38
+payload	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^        $payload = json_decode($payload, true);$/;"	variable	line:39
+data	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^            $data = [$/;"	variable	line:45
+__getSessionId	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    private function __getSessionId($conn)$/;"	function	line:54
+__getUserIdFromSession	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    private function __getUserIdFromSession($sessionId) {$/;"	function	line:59
+dbs	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^        $dbs = new DatabaseSession();$/;"	variable	line:60
+sessionData	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^        $sessionData = $dbs->read($sessionId);$/;"	variable	line:61
+unserializedData	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^        $unserializedData = [];$/;"	variable	line:62
+offset	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^        $offset = 0;$/;"	variable	line:63
+pos	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^            $pos = strpos($sessionData, "|", $offset);$/;"	variable	line:68
+num	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^            $num = $pos - $offset;$/;"	variable	line:69
+varname	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^            $varname = substr($sessionData, $offset, $num);$/;"	variable	line:70
+data	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^            $data = unserialize(substr($sessionData, $offset));$/;"	variable	line:72
+onCall	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    public function onCall(ConnectionInterface $conn, $id, $topic, array $params) {$/;"	function	line:79
+onPublish	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    public function onPublish(ConnectionInterface $conn, $topic, $event, array $exclude, array $eligible) {$/;"	function	line:82
+onUnSubscribe	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    public function onUnSubscribe(ConnectionInterface $conn, $topic) {$/;"	function	line:85
+onSubscribe	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Lib/SocketPusher.php	/^    public function onSubscribe(ConnectionInterface $conn, $topic) {$/;"	function	line:88
+getPublisherClientIds	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Entity/WebsocketTrait.php	/^    public function getPublisherClientIds($action = '')$/;"	function	line:10
+getPublisherData	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Entity/WebsocketTrait.php	/^    public function getPublisherData($action = '')$/;"	function	line:15
+getSocketSessionIds	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Entity/WebsocketTrait.php	/^    public function getSocketSessionIds($conditions = [])$/;"	function	line:20
+getPayloadAction	/Users/fuco/Sites/cake-relay/plugins/CakeWebsocket/src/Model/Entity/WebsocketTrait.php	/^    public function getPayloadAction($action)$/;"	function	line:29
+ChannelAction	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^class ChannelAction extends Entity$/;"	class	line:22
+_accessible	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^    protected $_accessible = [$/;"	variable	line:36
+_accessible	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^    protected $_accessible = [$/;"	variable	line:36
+getPublisherClientIds	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^    public function getPublisherClientIds($action = '')$/;"	function	line:41
+getPusblisherData	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^    public function getPusblisherData()$/;"	function	line:56
+return	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^        $return = [$/;"	variable	line:58

@@ -4,6 +4,7 @@ namespace App\Controller;
 use App\Lib\Status;
 use App\Model\Entity\SupplierProfile;
 use App\Model\Entity\User;
+use Cake\Core\Configure;
 use Cake\Event\EventManager;
 use Cake\Routing\Router;
 
@@ -40,6 +41,12 @@ class LoginController extends AppController
             if ($userData) {
                 if ($this->request->data['cookie']) {
                     $this->AuthUtils->addRememberMeCookie($userData['id']);
+                }
+                if (empty($userData['data']['channelDurations'])) {
+                    $userData['data']['channelDurations'] = Configure::read('Channels.defaultDurations');
+                }
+                if (empty($userData['data']['channelLabels'])) {
+                    $userData['data']['channelLabels'] = Configure::read('Channels.defaultLabels');
                 }
                 $this->Auth->setUser($userData);
                 return $this->redirect($this->Auth->redirectUrl());

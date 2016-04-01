@@ -79,4 +79,21 @@ class UsersController extends AppController
             'user' => $user->toArray()
         ]);
     }
+
+    public function updateData()
+    {
+        $this->request->allowMethod('post');
+        $user = $this->Users->get($this->Auth->user('id'));
+        $user->accessible('*', false);
+        $user->accessible('data', true);
+        $this->Users->patchEntity($user, $this->request->data);
+        if ($this->Users->save($user)) {
+            $this->Auth->setUser($user->toArray());
+            return $this->Api->response(ApiReturnCode::SUCCESS, [
+                'user' => $user
+            ]);
+        } else {
+            return $this->Api->response(ApiReturnCode::INTERNAL_ERROR);
+        }
+    }
 }

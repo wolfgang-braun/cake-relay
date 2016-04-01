@@ -323,7 +323,7 @@ return [
      * To use database sessions, load the SQL file located at config/Schema/sessions.sql
      */
     'Session' => [
-        'defaults' => 'php',
+        'defaults' => 'database',
         'cookie' => 'CAKERELAY'
     ],
     'Attachments' => [
@@ -387,5 +387,19 @@ return [
     'CakeMonitor' => [
         'accessToken' => 'iuh988dhsaijn232HHH',
         'projectName' => 'CAKERELAY'
+    ],
+    'Channels' => [
+        'defaultDurations' => [
+            0 => 3,
+            1 => 3,
+            2 => 3,
+            3 => 3
+        ],
+        'defaultLabels' => [
+            0 => 'Kanal 1',
+            1 => 'Kanal 2',
+            2 => 'Kanal 3',
+            3 => 'Kanal 4'
+        ]
     ]
 ];

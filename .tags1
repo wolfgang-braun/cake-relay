@@ -1,0 +1,12 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ChannelAction	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^class ChannelAction extends Entity$/;"	class	line:22
+_accessible	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^    protected $_accessible = [$/;"	variable	line:36
+_accessible	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^    protected $_accessible = [$/;"	variable	line:36
+getPublisherClientIds	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^    public function getPublisherClientIds($action = '')$/;"	function	line:41
+getPusblisherData	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^    public function getPusblisherData()$/;"	function	line:56
+return	/Users/fuco/Sites/cake-relay/src/Model/Entity/ChannelAction.php	/^        $return = [$/;"	variable	line:58

@@ -1,4 +1,4 @@
 /vendor/*
 /tmp/*
 /logs/*
-/config/schema/DBSchema.mwb
+/config/schema/DBSchema.mwb.bak

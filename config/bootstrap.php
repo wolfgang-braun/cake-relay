@@ -183,7 +183,6 @@ Plugin::load('ModelHistory', ['bootstrap' => false, 'routes' => true]);
 Plugin::load('Cms', ['bootstrap' => true, 'routes' => true]);
 Plugin::load('AssetCompress', ['bootstrap' => true]);
 Plugin::load('Schema', ['bootstrap' => true]);
-Plugin::load('Queue');
 Plugin::load('Api', ['bootstrap' => true, 'routes' => true]);
 Plugin::load('Monitor', ['bootstrap' => true, 'routes' => true]);
 
@@ -194,10 +193,10 @@ if (ENVIRONMENT === Environments::DEVELOPMENT) {
 
 // Only try to load DebugKit in development mode
 // Debug Kit should not be installed on a production system
-if (Configure::read('debug')) {
-    Plugin::load('DebugKit', ['bootstrap' => true]);
-    Plugin::load('CakeBootstrap3');
-}
+// if (Configure::read('debug')) {
+//     Plugin::load('DebugKit', ['bootstrap' => true]);
+//     Plugin::load('CakeBootstrap3');
+// }
 
 // Datasource Type Mappings
 Type::map('json', 'CkTools\Database\Type\JsonType');
@@ -234,3 +233,5 @@ DispatcherFactory::add('ControllerFactory');
  * This is needed for matching the auto-localized string output of Time() class when parsing dates.
  */
 Type::build('datetime')->useLocaleParser();
+
+Plugin::load('CakeWebsocket', ['bootstrap' => true, 'routes' => true]);

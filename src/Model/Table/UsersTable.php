@@ -62,6 +62,8 @@ class UsersTable extends Table
             ]
         ]);
 
+        $this->schema()->columnType('data', 'json');
+
         $this->addBehavior('Timestamp');
     }
 

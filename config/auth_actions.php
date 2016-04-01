@@ -22,7 +22,11 @@ $config = [
         ],
         'Cms.CmsPages' => [
             'show'
-        ]
+        ],
+        'Channels' => [
+            'test'
+        ],
+        'CakeWebsocket.Example' => '*'
     ],
     'auth_actions' => [
         'Home' => [
@@ -42,6 +46,12 @@ $config = [
         ],
         'Admin.Login' => [
             '*' => [User::ROLE_ADMIN]
+        ],
+        'Api.Users' => [
+            '*' => [User::ROLE_ADMIN, User::ROLE_USER]
+        ],
+        'Api.ChannelActions' => [
+            '*' => [User::ROLE_ADMIN, User::ROLE_USER]
         ],
         'ModelHistory.ModelHistory' => [
             '*' => [User::ROLE_ADMIN]

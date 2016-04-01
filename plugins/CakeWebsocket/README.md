@@ -1,0 +1,1 @@
+# CakeWebsocket plugin for CakePHP

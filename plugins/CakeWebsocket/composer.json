@@ -1,0 +1,25 @@
+{
+    "name": "your-name-here/CakeWebsocket",
+    "description": "CakeWebsocket plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "~3.0",
+        "cboden/ratchet": "dev-master",
+        "react/zmq": "0.2.*|0.3.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CakeWebsocket\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CakeWebsocket\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}

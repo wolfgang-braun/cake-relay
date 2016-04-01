@@ -2,3 +2,22 @@
 .login-button {
     margin: 14px 20px 0 0;
 }
+img {
+filter: none; 
+-webkit-filter: blur(0px); 
+-moz-filter: blur(0px); 
+-ms-filter: blur(0px);
+filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+html, body{
+    background:#adadad;
+}
+.navbar-default {
+    border: none;
+    background: transparent;
+}
+@media (min-width: 768px) {
+    .navbar-header {
+        float: none;
+    }
+}
